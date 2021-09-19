@@ -1,26 +1,28 @@
+**Disclaimer:** This repo is forked from [iraldoad/laravel-api-key](https://github.com/iraldoad/laravel-api-key) and [ejarnutowski/laravel-api-key](https://github.com/ejarnutowski/laravel-api-key) and all the work is dedicated to the authors. This is mainly used to customize the response in the Exceptions/Handler.php when the client does not send the api-key.
+
 Laravel API Key Auth
 ========
 
-<a href="https://packagist.org/packages/ejarnutowski/laravel-api-key"><img src="https://poser.pugx.org/ejarnutowski/laravel-api-key/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/ejarnutowski/laravel-api-key"><img src="https://poser.pugx.org/ejarnutowski/laravel-api-key/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/ejarnutowski/laravel-api-key"><img src="https://poser.pugx.org/ejarnutowski/laravel-api-key/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/minhkashyu/laravel-api-key"><img src="https://poser.pugx.org/minhkashyu/laravel-api-key/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/minhkashyu/laravel-api-key"><img src="https://poser.pugx.org/minhkashyu/laravel-api-key/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/minhkashyu/laravel-api-key"><img src="https://poser.pugx.org/minhkashyu/laravel-api-key/license.svg" alt="License"></a>
 
 ## Installation
 
-Run `composer require ejarnutowski/laravel-api-key`.
+Run `composer require minhkashyu/laravel-api-key`.
 
 In your `config/app.php` file, add the Laravel API Key service provider to the end of the `providers` array.
 
 ```php
 'providers' => [
     ...
-    Ejarnutowski\LaravelApiKey\Providers\ApiKeyServiceProvider::class,
+    MKS\LaravelApiKey\Providers\ApiKeyServiceProvider::class,
 ],
 ```
 
 Publish the migration files
 
-    $ php artisan vendor:publish
+    $ php artisan vendor:publish --provider="MKS\LaravelApiKey\Providers\ApiKeyServiceProvider"
 
 Run the migrations
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Ejarnutowski\LaravelApiKey\Http\Middleware;
+namespace MKS\LaravelApiKey\Http\Middleware;
 
 use Closure;
-use Ejarnutowski\LaravelApiKey\Models\ApiKey;
-use Ejarnutowski\LaravelApiKey\Models\ApiKeyAccessEvent;
+use MKS\LaravelApiKey\Models\ApiKey;
+use MKS\LaravelApiKey\Models\ApiKeyAccessEvent;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
